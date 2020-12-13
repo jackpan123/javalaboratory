@@ -1,4 +1,4 @@
-package com.woailqw.map.hashmap;
+package com.jackpan.map.hashmap;
 
 public class HashMapLowBitHashCollide {
 

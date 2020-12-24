@@ -1,5 +1,7 @@
 package com.jackpan.concurrent;
 
+import com.jackpan.basic.EnhancementRequest;
+
 import java.util.Collections;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

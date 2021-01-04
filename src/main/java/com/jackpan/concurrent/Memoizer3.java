@@ -19,7 +19,7 @@ public class Memoizer3<A, V> implements Computable<A, V> {
         this.c = c;
     }
 
-    public synchronized V compute(A arg) throws InterruptedException {
+    public V compute(A arg) throws InterruptedException {
         FutureTask<V> f = cache.get(arg);
         if (f == null) {
             Callable<V> eval = new Callable<V>() {

@@ -1,10 +1,16 @@
 package com.jackpan.basic;
 
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+
 /**
  * @author jackpan
  * @version v1.0 2020/12/23 13:34
  */
 public class BasicMathDemo {
+
+    private static DecimalFormat df = new DecimalFormat("0.00");
+
     public static void main(String[] args) {
         double a = -191.635;
         double b = 43.74;
@@ -30,5 +36,10 @@ public class BasicMathDemo {
 
         System.out.printf("The min of of %d " + "and %d is %d%n",
                 c, d, Math.min(c, d));
+
+        int n =3;
+        int size = 11;
+        double f1 = new BigDecimal((float)n/size).setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue();
+        System.out.println(f1);
     }
 }
